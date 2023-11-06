@@ -1,5 +1,5 @@
-.idea
-TDDPays.Api/bin
-TDDPays.Api/obj
-TDDPays.Tests/bin
-TDDPays.Tests/obj
+/.idea/
+/TDDPays.Api/bin/
+/TDDPays.Api/obj/
+/TDDPays.Tests/bin/
+/TDDPays.Tests/obj/
