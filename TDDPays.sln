@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDPays.Api", "TDDPays.Api\TDDPays.Api.csproj", "{DD4A83AD-BBCA-48DF-B273-B267F0722360}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDDPays.Tests", "TDDPays.Tests\TDDPays.Tests.csproj", "{46C639DA-D5C9-4D65-A8E9-3BEBC3A25EE8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD4A83AD-BBCA-48DF-B273-B267F0722360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD4A83AD-BBCA-48DF-B273-B267F0722360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD4A83AD-BBCA-48DF-B273-B267F0722360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD4A83AD-BBCA-48DF-B273-B267F0722360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46C639DA-D5C9-4D65-A8E9-3BEBC3A25EE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46C639DA-D5C9-4D65-A8E9-3BEBC3A25EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46C639DA-D5C9-4D65-A8E9-3BEBC3A25EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46C639DA-D5C9-4D65-A8E9-3BEBC3A25EE8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
