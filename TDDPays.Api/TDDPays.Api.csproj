@@ -7,24 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ChoETL" Version="1.2.1.64" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="7.0.13" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.13" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    <InternalVisibleTo Include="TDDPays.Tests" />
   </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="obj\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Remove="obj\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Remove="obj\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Remove="obj\**" />
-  </ItemGroup>
-
+  
 </Project>
