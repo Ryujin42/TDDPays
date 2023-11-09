@@ -19,9 +19,10 @@ public class GovernmentController : ControllerBase
     {
         var results = new List<Government>();
         
-        using (var reader = new ChoCSVReader("government.csv").WithFirstLineHeader().WithDelimiter(","))
+        using (var reader = new ChoCSVReader(AppDomain.CurrentDomain.BaseDirectory + "../../../government.csv")
+                   .WithFirstLineHeader().WithDelimiter(","))
         {
-            foreach (dynamic government in reader)
+            foreach (var government in reader)
             {
                 var result = new Government
                 {
@@ -39,11 +40,11 @@ public class GovernmentController : ControllerBase
     [HttpGet("{id}", Name = "GetGovernmentById")]
     public async Task<IActionResult> GetAsyncById(string id)
     {
-        if (string.IsNullOrWhiteSpace(id)) return BadRequest();
-        
-        using (var reader = new ChoCSVReader("government.csv").WithFirstLineHeader().WithDelimiter(","))
+        using (var reader = new ChoCSVReader(
+                   AppDomain.CurrentDomain.BaseDirectory + "../../../government.csv")
+                   .WithFirstLineHeader().WithDelimiter(","))
         {
-            foreach (dynamic government in reader)
+            foreach (var government in reader)
             {
                 if (government.Id == id)
                 {
