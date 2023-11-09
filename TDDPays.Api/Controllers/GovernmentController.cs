@@ -53,6 +53,7 @@ public class GovernmentController : ControllerBase
                         Id = government.Id,
                         Name = government.Name
                     };
+                    if (result.Name.IsObjectNullOrEmpty()) return NoContent();
                     return Ok(result);
                 }
             }
